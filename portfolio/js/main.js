@@ -27,8 +27,8 @@ function initThemeToggle() {
         html.classList.remove('dark');
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
-        icon.classList.remove('text-yellow-400');
-        icon.classList.add('text-blue-500');
+        icon.classList.remove('text-slate-400');
+        icon.classList.add('text-slate-600');
     }
 
     themeToggle.addEventListener('click', function() {
@@ -37,14 +37,14 @@ function initThemeToggle() {
         if (html.classList.contains('dark')) {
             icon.classList.remove('fa-sun');
             icon.classList.add('fa-moon');
-            icon.classList.remove('text-blue-500');
+            icon.classList.remove('text-slate-600');
             icon.classList.add('text-slate-400');
             localStorage.setItem('theme', 'dark');
         } else {
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
             icon.classList.remove('text-slate-400');
-            icon.classList.add('text-blue-500');
+            icon.classList.add('text-slate-600');
             localStorage.setItem('theme', 'light');
         }
     });
